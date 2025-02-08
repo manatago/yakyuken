@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野球拳ゲーム</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="game-title"></h1>
+        <div class="character-status">
+            <div class="main-character">
+                <img src="assets/clothed.png" id="character-state" alt="キャラクター">
+            </div>
+            
+            <!-- 進捗表示（丸印のみ） -->
+            <div class="progress-status">
+                <div class="stage-indicator">
+                    <div class="stage-dot" data-stage="0" title="服を着た状態"></div>
+                    <div class="stage-dot" data-stage="1" title="上着を脱いだ状態"></div>
+                    <div class="stage-dot" data-stage="2" title="スカートを脱いだ状態"></div>
+                    <div class="stage-dot" data-stage="3" title="トップレス"></div>
+                    <div class="stage-dot" data-stage="4" title="全裸"></div>
+                    <div class="stage-dot" data-stage="5" title="エッチ"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <div class="choices">
+                <button id="rock" class="choice-btn">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                    <span>グー</span>
+                </button>
+                <button id="scissors" class="choice-btn">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                    <span>チョキ</span>
+                </button>
+                <button id="paper" class="choice-btn">
+                    <i class="fa-solid fa-hand"></i>
+                    <span>パー</span>
+                </button>
+            </div>
+            <div class="game-status">
+                <p id="message">じゃんけんを選んでください</p>
+            </div>
+            <div class="expressions">
+                <img src="assets/normal.png" id="expression-normal" class="expression active" alt="通常表情">
+                <img src="assets/win.png" id="expression-win" class="expression" alt="勝利表情">
+                <img src="assets/lose.png" id="expression-lose" class="expression" alt="敗北表情">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

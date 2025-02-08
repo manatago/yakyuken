@@ -1,0 +1,10 @@
+# キャラクター設定ファイル
+name.txt
+
+# アセットファイル
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.gif
+assets/*.wav
+assets/*.mp3
